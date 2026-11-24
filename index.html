@@ -37,7 +37,8 @@
     @keyframes glimmer{0%,30%,100%{opacity:0;transform:scale(.5) rotate(0)}50%,60%{opacity:.85;transform:scale(1) rotate(30deg)}}
     .subtitle{max-width:100%;margin:8px 0 0;text-align:center;text-wrap:balance;font-size:clamp(1.1rem,2.5vw,1.4rem);font-weight:600;line-height:1.5;color:#e9c2d3;text-shadow:0 0 18px #f8c6db33}
     .subtitle span{font-size:.65em;color:#e9c58a;vertical-align:12%;margin:0 .6em}
-    .next-gift{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;margin-top:14px;padding:8px 17px;border:1px solid #edbdd52e;border-radius:999px;color:#eac4d7;background:#e4afcb08;font:500 12px system-ui,sans-serif;text-decoration:none;-webkit-tap-highlight-color:transparent;transition:background .2s,border-color .2s}
+    .gift-links{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin-top:14px}
+    .next-gift{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 17px;border:1px solid #edbdd52e;border-radius:999px;color:#eac4d7;background:#e4afcb08;font:500 12px system-ui,sans-serif;text-decoration:none;-webkit-tap-highlight-color:transparent;transition:background .2s,border-color .2s}
     .next-gift:hover{background:#e4afcb18;border-color:#edbdd566}
     .next-gift:focus-visible{outline:2px solid #ffe0a4;outline-offset:5px}
     .next-gift span{color:#f2d39a}
@@ -53,7 +54,7 @@
         padding-top:max(12px,var(--safe-top));padding-bottom:max(12px,var(--safe-bottom))}
       .title{grid-column:1;grid-row:2;align-self:end;justify-self:center;margin-bottom:10px;font-size:clamp(1.4rem,4vw,2.15rem)}
       .subtitle{grid-column:1;grid-row:3;align-self:start;justify-self:center;margin-top:0;font-size:clamp(1rem,2.3vw,1.2rem)}
-      .next-gift{grid-column:1;grid-row:4;align-self:start;justify-self:center;margin-top:12px}
+      .gift-links{grid-column:1;grid-row:4;align-self:start;justify-self:center;margin-top:12px}
       .bouquet-interaction{grid-column:2;grid-row:1/-1;justify-self:center;width:min(100%,calc((var(--viewport-height) - var(--safe-top) - var(--safe-bottom) - 32px)*.828571))}
     }
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.star{opacity:.35}.petal-fall,.glint{display:none}.bloom{opacity:1;transform:none}.bouquet-interaction{transform:none}}
@@ -325,7 +326,10 @@
       </div>
     </div>
     <p class="subtitle"><span aria-hidden="true">✦</span>Dành tặng cho Kem<span aria-hidden="true">✦</span></p>
-    <a class="next-gift" href="kem.html">Kem & Twinkle <span aria-hidden="true">✦</span></a>
+    <div class="gift-links">
+      <a class="next-gift" href="thu-moi-thu-sau.html">Có một lá thư dành cho em <span aria-hidden="true">♡</span></a>
+      <a class="next-gift" href="kem.html">Kem & Twinkle <span aria-hidden="true">✦</span></a>
+    </div>
   </main>
   <script>
     const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
